@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OOD Assignment 1</title>
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Web Starter Kit">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+
+  <!-- Color the status bar on mobile devices -->
+  <meta name="theme-color" content="#2F3BA2">
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+
+  <!-- Material Design Lite page styles:
+  You can choose other color schemes from the CDN, more info here http://www.getmdl.io/customize/index.html
+  Format: material.color1-color2.min.css, some examples:
+  material.red-teal.min.css
+  material.blue-orange.min.css
+  material.purple-indigo.min.css
+  -->
+  <link rel="stylesheet" href="styles/material.indigo-pink.min.css">
+
+  <!-- Material Design icons -->
+  <link rel="stylesheet" href="styles/iconStyles.css">
+
+  <!-- Your styles -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    </div>
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      <h3>OOD Assignment 1 <img src="images/4-aces-icon.png"></h3>
+    </div>
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    </div>
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+      <a href="#intro" class="mdl-layout__tab is-active">Intro</a>
+      <a href="#Switch" class="mdl-layout__tab">Switch</a>
+      <a href="#Rummy" class="mdl-layout__tab">Rummy</a>
+      <a href="#aboutUs" class="mdl-layout__tab">About Us</a>
+      <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;fab mdl-js-ripple-effect mdl-button&#45;&#45;colored mdl-shadow&#45;&#45;4dp mdl-color&#45;&#45;accent" id="add">-->
+      <!--<i class="material-icons" role="presentation">add</i>-->
+      <!--<span class="visuallyhidden">Add</span>-->
+      <!--</button>-->
+    </div>
+  </header>
+
+  <main class="mdl-layout__content">
+    <div class="mdl-layout__tab-panel is-active" id="intro">
+      <h3 style="text-align: center">OOD Group Assignment</h3>
+      <br/>
+      <!--http://icons.iconarchive.com/icons/designcontest/casino/48/4-aces-icon.png-->
+      <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+            <h4 class="mdl-cell mdl-cell--12-col">Introduction</h4>
+            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+              <div class="section__circle-container__circle mdl-color--primary" style="width: 20px;height: 20px;"></div>
+            </div>
+            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+              <h4>Requirement</h4>
+
+              <h6><b>•</b> Design a software system for playing card games.</h6>
+              <h6><b>•</b> Playing cards consist of 52 individual cards in a deck. Each card has a suit and a value.
+              </h6>
+              <h6><b>•</b> Suit = { <img
+                src="images/Diamonds-48.png"
+                width="24" height="24">
+                , <img
+                  src="images/Hearts-48.png"
+                  width="24" height="24">,
+                <img
+                  src="images/Spades-48-2.png"
+                  width="24" height="24">,
+                <img
+                  src="images/Clubs-48.png"
+                  width="24" height="24">}</h6>
+              <h6><b>•</b> Value={<img src="images/cards/sa.png" width="48" height="48">
+                <img src="images/cards/d2.png" width="48" height="48"/>
+                <img src="images/cards/d3.png" width="48" height="48"/>
+                <img src="images/cards/d4.png" width="48" height="48"/>
+                <img src="images/cards/s5.png" width="48" height="48"/>
+                <img src="images/cards/s6.png" width="48" height="48"/>
+                <img src="images/cards/d7.png" width="48" height="48"/>
+                <img src="images/cards/d8.png" width="48" height="48"/>
+                <img src="images/cards/d9.png" width="48" height="48"/>
+                <img src="images/cards/d10.png" width="48" height="48"/>
+                <img src="images/cards/dj.png" width="48" height="48"/>
+                <img src="images/cards/dq.png" width="48" height="48"/>
+                <img src="images/cards/dk.png" width="48" height="48"/>
+                }</h6>
+              <h6><b>•</b> Games involve a set of one or more players. Each player is given a hand of cards by a dealer.
+                A hand
+                is a set of cards assigned to the player. Different games involve different numbers of cards in each
+                hand.</h6>
+              <h6><b>•</b> Play requires each player in turn to perform an acWon, such as to lay one or more cards on
+                the
+                table, or to discard some cards, or put some cards back in the deck.</h6>
+              <h6><b>•</b> Each card game has a set of rules that determine how players make their moves and how the
+                game is
+                eventually won.</h6>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+      <br/>
+      <br/>
+
+      <div align="middle">
+        <h4>Class Diagram</h4>
+
+        <img src="images/ClassDiagram.png">
+
+
+      </div>
+    </div>
+    <div class="mdl-layout__tab-panel" id="Switch">
+      <a href="#usecaseS">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="tt4">
+
+          Use Case
+        </button>
+      </a>
+      <div class="mdl-tooltip" for="tt4">
+        Use Case Diagram
+      </div>
+
+      <a href="#sequenceS">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="tt5">
+
+          Sequence Diagram
+        </button>
+      </a>
+      <div class="mdl-tooltip" for="tt5">
+        Sequence Diagram
+      </div>
+
+      <a href="#colS">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="tt6">
+
+          Collaboration Diagram
+        </button>
+      </a>
+      <div class="mdl-tooltip" for="tt6">
+        Collaboration Diagram
+      </div>
+      <section class="section--center mdl-grid mdl-grid--no-spacing">
+        <p class="mdl-cell mdl-cell--12-col">
+        <h4>Switch</h4>
+        Switch is played with a regular, single deck of playing cards.
+        Each player at his turn may play any card from his hand that matches the suit or the rank of the card previously
+        played; for example, if the previous card was a seven of clubs, the next player may put down any seven card, or
+        any club card, from his hand. Should the player not have any card available to play, he must pick up one card.
+        </p>
+        <br/>
+        <br/>
+
+        <h4>Rules</h4>
+        Players are initially dealt a similar sized hand of cards (often five per person), but the exact number may vary
+        depending on how many players are present. The remainder of the deck is placed face down and serve as a "pool"
+        or drawing stack. At the beginning of the game the topmost card from the "pool" is revealed and, so long as this
+        card is not an Ace, play begins. (Switch may not start with an Ace, and so if the "starting card" is an Ace,
+        cards shall continue to be selected from the pool until a non-Ace card is revealed.)
+        The first to play (generally, the player on the dealer's left) should select from his or her hand a card that
+        matches either, the suit or the rank of the open card (the card that is "top"); for example, on a 9 of spades,
+        only a spade card or a 9 may be played. If a player is not able to place a card (and the player does not have an
+        Ace), he draws a single card from the stack.
+        If the drawing stack is run down and becomes empty, the playing stack or discard pile (except for the topmost
+        card) is shuffled, and placed face down to become the new "pool."
+        Ace: can be played regardless of the suit or value of the topmost card on the playing deck—that is, the Ace may
+        be played at any time in the game. When playing an Ace, the player can decide freely the suit that has to be
+        played next; from then on, play continues as normal, but on the suit selected by the player of the Ace.
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        </p>
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="usecaseS">
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+              <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+
+                <h4>Use Case Diagram</h4>
+
+                <img src="images/Usecase-switch.PNG">
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="sequenceS">
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+              <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+
+                <h4>Sequence Diagrams</h4>
+                <br/>
+                <br/>
+                <h5><b>Distribute Cards</b></h5>
+
+                <img src="images/switch_initialisation_sequence.png">
+
+                <br/>
+                <hr/>
+                <br/>
+
+                <br/>
+
+                <h5><b>Play</b></h5>
+
+                <img src="images/switch_play_sequence.png">
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="colS">
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+              <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+
+                <h4>Collaboration Diagram on Playing</h4>
+
+                <img src="images/colloborationSwitch.png">
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      </section>
+    </div>
+
+    <section class="mdl-layout__tab-panel" id="Rummy">
+
+
+      <a href="#useCase">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="tt1">
+
+          Use Case
+        </button>
+      </a>
+      <div class="mdl-tooltip" for="tt1">
+        Use Case Diagram
+      </div>
+
+      <a href="#init">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="tt2">
+
+          Sequence Diagram
+        </button>
+      </a>
+      <div class="mdl-tooltip" for="tt2">
+        Sequence Diagram
+      </div>
+
+      <a href="#col">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="tt3">
+
+          Collaboration Diagram
+        </button>
+      </a>
+      <div class="mdl-tooltip" for="tt3">
+        Collaboration Diagram
+      </div>
+
+
+      <section class="section--center mdl-grid mdl-grid--no-spacing">
+        <p class="mdl-cell mdl-cell--12-col">
+        <h4>Basic Rummy</h4>
+        <p class="mdl-cell mdl-cell--12-col">
+          The game is best played with two to four players, but up to six can take part.
+        </p>
+        <h5>The Deck</h5>
+        <p class="mdl-cell mdl-cell--12-col"> One standard deck of 52 cards is used. Cards in each suit rank, from low
+          to high:<br/>
+          <img src="images/cards/sa.png" width="48" height="48">
+          <img src="images/cards/d2.png" width="48" height="48"/>
+          <img src="images/cards/d3.png" width="48" height="48"/>
+          <img src="images/cards/d4.png" width="48" height="48"/>
+          <img src="images/cards/s5.png" width="48" height="48"/>
+          <img src="images/cards/s6.png" width="48" height="48"/>
+          <img src="images/cards/d7.png" width="48" height="48"/>
+          <img src="images/cards/d8.png" width="48" height="48"/>
+          <img src="images/cards/d9.png" width="48" height="48"/>
+          <img src="images/cards/d10.png" width="48" height="48"/>
+          <img src="images/cards/dj.png" width="48" height="48"/>
+          <img src="images/cards/dq.png" width="48" height="48"/>
+          <img src="images/cards/dk.png" width="48" height="48"/>
+        <p>
+        <h5>The Deal</h5>
+        <p class="mdl-cell mdl-cell--12-col">
+          The dealer is chosen randomly. In a two player game, each player is dealt a hand of ten cards. Seven cards
+          each
+          are dealt if there are three or four players, and when five or six play each player gets six cards. The
+          cards
+          are dealt one at a time, and after the deal, the next card is placed face up on the table to start the
+          discard
+          pile, and the remainder of the deck is placed face down beside it to form the stock. The players look at and
+          sort their cards.
+        </p>
+        <br/>
+        <h5>Object of the Game</h5>
+        <p class="mdl-cell mdl-cell--12-col"> The object of the game is to dispose of all the cards in your hand.
+          There
+          are three ways to get rid of cards:
+          melding, laying off, and discarding.</p>
+        </p>
+        <br/>
+        <div>
+          <h6><b>•</b> Melding</h6>
+          <p class="mdl-cell mdl-cell--12-col">
+            is taking a combination of cards from your hand, and placing it face up in front of you on the table,
+            where
+            it
+            stays. There are two kinds of combination which can be melded: sequences (also known as runs) and groups
+            (also
+            known as sets or books).
+          </p>
+          <br/>
+          <p class="mdl-cell mdl-cell--12-col">
+            <b>-</b> a sequence or run consists of three or more cards of the same suit in consecutive order, such as
+          </p>
+          <p class="mdl-cell mdl-cell--12-col">
+            <img src="images/cards/s4.png" width="48" height="48"/>
+            <img src="images/cards/s5.png" width="48" height="48"/>
+            <img src="images/cards/s6.png" width="48" height="48"/>
+
+            or
+
+            <img src="images/cards/d8.png" width="48" height="48"/>
+            <img src="images/cards/d9.png" width="48" height="48"/>
+            <img src="images/cards/d10.png" width="48" height="48"/>
+            <img src="images/cards/dj.png" width="48" height="48"/>
+          </p>
+
+          <p class="mdl-cell mdl-cell--12-col">
+            <b>-</b> a group, set or book is three or four cards of the same rank, such as
+            <img src="images/cards/d7.png" width="48" height="48"/>
+            <img src="images/cards/d7.png" width="48" height="48"/>
+            <img src="images/cards/d7.png" width="48" height="48"/>
+
+            ￼</p>
+        </div>
+        <br/>
+        <div>
+          <h6><b>•</b> Laying off</h6>
+          <p class="mdl-cell mdl-cell--12-col">
+            Is adding a card or cards from your hand to a
+            meld already on the table. The cards added to a meld must make another valid meld.
+          </p>
+          <p class="mdl-cell mdl-cell--12-col">For example to the
+            <img src="images/cards/d4.png" width="48" height="48"/>
+            <img src="images/cards/d5.png" width="48" height="48"/>
+            <img src="images/cards/d6.png" width="48" height="48"/>
+            you could add the
+            <img src="images/cards/d3.png" width="48" height="48"/>
+            or the
+            <img src="images/cards/d7.png" width="48" height="48"/>
+          </p>
+          <p class="mdl-cell mdl-cell--12-col">You are not permitted to rearrange the melds in the process.</p>
+          <p class="mdl-cell mdl-cell--12-col">For example,</p>
+          <img src="images/cards/d2.png" width="48" height="48"/>
+          <img src="images/cards/h2.png" width="48" height="48"/>
+          <img src="images/cards/s2.png" width="48" height="48"/>
+          <img src="images/cards/c2.png" width="48" height="48"/>
+          and ￼ <img src="images/cards/s3.png" width="48" height="48"/>
+          <img src="images/cards/s4.png" width="48" height="48"/>
+          <img src="images/cards/s5.png" width="48" height="48"/>
+          <p class="mdl-cell mdl-cell--12-col">have been melded, you are not permitted to move the <img
+            src="images/cards/s2.png" width="48" height="48"/> from the group to the
+            sequence, so as to lay off the <img src="images/cards/sa.png" width="48"
+                                                height="48"/></p>
+          </p>
+        </div>
+        <br/>
+        <div>
+          <h6><b>•</b> Discarding</h6>
+          <p class="mdl-cell mdl-cell--12-col">
+            Is playing a card from your hand on top of the discard pile. You get rid of one card this way at the end
+            of
+            each turn.
+          </p>
+        </div>
+        <br/>
+
+        <div>
+          <h5>Play</h5>
+          <p class="mdl-cell mdl-cell--12-col">
+
+            If there are two players, they take alternate turns starting with the non dealer. If there are more than
+            two
+            players, they take turns in clockwise rotation, beginning with the player to dealer's left.
+            Each turn consists of the following parts:
+          </p>
+
+          <div>
+            <h6><b>•</b> The Draw</h6>
+            <p class="mdl-cell mdl-cell--12-col">
+              You must begin by taking one card from
+              either the top of the Stock pile or the top card on the discard pile, and adding it to your hand. The
+              discard pile is face up, so you can see in advance what you are getting. The stock is face down, so if
+              you
+              choose to draw from the stock you do not see the card until after you have committed yourself to take
+              it.
+              If you draw from the stock, you add the card to your hand without showing it to the other players.
+            </p>
+          </div>
+          <br/>
+
+          <div>
+            <h6><b>•</b> Melding</h6>
+            <p class="mdl-cell mdl-cell--12-col">
+              If you have a valid group or sequence in your hand, you may lay one such combination face up on the
+              table
+              in front of you. You cannot meld more than one combination in a turn. Melding is optional; you are not
+              obliged to meld just because you can.
+            </p>
+          </div>
+
+          <div>
+            <h6><b>•</b> Laying off</h6>
+            <p class="mdl-cell mdl-cell--12-col">
+              This is also optional. If you wish, you may
+              add cards to groups or sequences previously melded by yourself or others. There is no limit to the
+              number
+              of cards a player may lay off in one turn.
+            </p>
+          </div>
+          <div>
+            <h6><b>•</b> The Discard</h6>
+            <p class="mdl-cell mdl-cell--12-col">
+              At the end of your turn, one card must be discarded from your hand and placed on top of the discard pile
+              face up. If you began your turn by picking up the top card of the discard pile you are not allowed to
+              end
+              that turn by discarding the same card, leaving the pile unchanged - you must discard a different card.
+              You
+              may however pick up the discard on one turn and discard that same card at a later turn. If you draw a
+              card
+              from the stock, it can be discarded on the same turn if you wish.
+            </p>
+          </div>
+
+
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <p class="mdl-cell mdl-cell--12-col">
+
+          At the end of your turn, one card must be discarded from your hand and placed on top of the discard pile
+          face
+          up. If you began your turn by picking up the top card of the discard pile you are not allowed to end that
+          turn
+          by discarding the same card, leaving the pile unchanged - you must discard a different card. You may however
+          pick up the discard on one turn and discard that same card at a later turn. If you draw a card from the
+          stock,
+          it can be discarded on the same turn if you wish.</p>
+
+
+      </section>
+      <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="useCase">
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+
+              <h4>Use Case Diagram</h4>
+
+              <img src="images/rummyUseCase.png">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="init">
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+
+              <h3>Sequence Diagram</h3>
+              <br/>
+              <h4>Initialisation</h4>
+              <img align="middle" src="images/Rummy_initialisation_sequence.png" width="70%" height="70%">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="play">
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+
+              <h4>Play</h4>
+
+              <img src="images/Rummy_play_sequence.png" width="70%" height="70%">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="col">
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+
+              <h4>Collaboration Diagram on playing</h4>
+
+              <img src="images/colloborationRummy.png">
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </section>
+    <section class="mdl-layout__tab-panel" id="aboutUs">
+      <div class="mdl-card mdl-cell mdl-cell--12-col">
+        <section class="section--center mdl-grid mdl-grid--no-spacing">
+          <h4>We are <img src="images/denver-logo.png"/></h4>
+
+
+          <style>
+            .demo-list-three {
+              width: 650px;
+            }
+          </style>
+
+          <ul class="demo-list-three mdl-list">
+            <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">person</i>
+      <span>R A C D Rupasinghe</span>
+      <span class="mdl-list__item-text-body">
+        R A Chathura Dananjaya Rupasinghe | Index No : 14208554
+      </span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-avatar">person</i>
+      <span>N B I Madusanka</span>
+      <span class="mdl-list__item-text-body">
+       N B Iresha Madusanka | Index No : 14208984
+      </span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-avatar">person</i>
+      <span>M T Warapitiya</span>
+      <span class="mdl-list__item-text-body">
+        Malindu Thilakna Warapitiya | Index No : 14209054
+      </span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-avatar">person</i>
+      <span>N H M W C U Ekanayake</span>
+      <span class="mdl-list__item-text-body">
+        N H M W Charuni Uthpala Ekanayake | Index No : 14209054
+      </span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-avatar">person</i>
+      <span>E J M C K Jayasundara</span>
+      <span class="mdl-list__item-text-body">
+        E J M Chamila Kumari Jayasundara | Index No : 14207534
+      </span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-avatar">person</i>
+      <span>K W W M P A W M D Madagoda</span>
+      <span class="mdl-list__item-text-body">
+        K W W M P A W Madubashini Dilrukshi Madagoda | Index No : 14208981
+      </span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span>
+            </li>
+          </ul>
+
+
+        </section>
+
+      </div>
+    </section>
+    <footer class="mdl-mega-footer">
+
+      <div class="mdl-mega-footer--bottom-section">
+        <div class="mdl-logo">
+          <img src="images/denver-logo.png">
+          <img src="images/redhat.png" width="30px" height="48pt">
+        </div>
+        <ul class="mdl-mega-footer--link-list">
+          <li><a href="http://ood-chathurad.rhcloud.com" target="_blank">Hosted Application</a></li>
+          <li>
+            <a target="_blank" href="https://github.com/denver-nsbm/OOD" id="gitHub"> <img src="images/GitHub-96.png" width="50pt" height="50pt"></a>
+            <div class="mdl-tooltip" for="gitHub">
+              Click here to see Source codes in git hub
+            </div>
+
+          </li>
+          <li>
+            <a target="_blank" href="https://www.openshift.com" id="openshift"><img src="images/openshift.png" width="50pt" height="50pt"></a>
+            <div class="mdl-tooltip" for="openshift" >
+              Application is hosted in Openshift
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+</div>
+
+<script src="js/material.min.js"></script>
+<!-- build:js(app/) ../../scripts/main.min.js -->
+<!--<script src="scripts/main.js"></script>-->
+<!-- endbuild -->
+
+
+</body>
+</html>
