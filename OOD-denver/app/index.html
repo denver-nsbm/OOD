@@ -16,7 +16,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -26,7 +26,7 @@
   <meta name="theme-color" content="#ffffff">
 
 
-<!-- Color the status bar on mobile devices -->
+  <!-- Color the status bar on mobile devices -->
   <meta name="theme-color" content="#2F3BA2">
 
   <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
@@ -74,10 +74,11 @@
   <main class="mdl-layout__content">
     <div class="mdl-layout__tab-panel is-active" id="intro">
 
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="pdf" onclick="window.open('pdfDoc.pdf'); return true;">
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="pdf"
+              onclick="window.open('pdfDoc.pdf'); return true;">
 
-          Pdf
-        </button>
+        Pdf
+      </button>
 
       <div class="mdl-tooltip" for="pdf">
         Cleck here to get pdf
@@ -181,6 +182,15 @@
       <div class="mdl-tooltip" for="tt6">
         Collaboration Diagram
       </div>
+      <a href="#crcS">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="tt10">
+
+          CRC Cards
+        </button>
+      </a>
+      <div class="mdl-tooltip" for="tt10">
+        CRC Cards
+      </div>
       <section class="section--center mdl-grid mdl-grid--no-spacing">
         <p class="mdl-cell mdl-cell--12-col">
         <h4>Switch</h4>
@@ -268,6 +278,120 @@
             </div>
           </div>
         </section>
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="crcS">
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+              <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+
+                <h4>CRC Cards</h4>
+
+
+                <table border="1" width="50%">
+                  <tbody>
+                  <tr>
+                    <td width="100%" colspan="2"><b>Class Name: </b>Player</td>
+                  </tr>
+                  <tr>
+                    <td width="100%" colspan="2"><b>Class Type: </b>External Entities</td>
+                  </tr>
+                  <tr>
+                    <td width="100%" colspan="2"><b>Class Characteristics: </b>Tangible, Atomic, Concurrent, Transient,
+                      Corruptible
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="50%"><b>Responsibilities:</b></td>
+                    <td width="50%"><b>Collaborators:</b></td>
+                  </tr>
+                  <tr>
+                    <td width="50%">Player_id</td>
+                    <td width="50%">play()</td>
+                  </tr>
+                  <tr>
+                    <td width="50%">Player_name</td>
+                    <td width="50%">get_hand()</td>
+                  </tr>
+                  <tr>
+                    <td width="50%">Player_status</td>
+                    <td width="50%">popCardFromStock()</td>
+                  </tr>
+                  <tr>
+                    <td width="50%"></td>
+                    <td width="50%">discard()</td>
+                  </tr>
+
+                  </tbody>
+                </table>
+                <br/>
+                <br/>
+                <table border="1" width="50%">
+                  <tbody>
+                  <tr>
+                    <td width="100%" colspan="2"><b>Class Name: </b>Dealer</td>
+                  </tr>
+                  <tr>
+                    <td width="100%" colspan="2"><b>Class Type: </b>External Entities</td>
+                  </tr>
+                  <tr>
+                    <td width="100%" colspan="2"><b>Class Characteristics: </b>Tangible, Atomic, Concurrent, Transient,
+                      Corruptible
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="50%"><b>Responsibilities:</b></td>
+                    <td width="50%"><b>Collaborators:</b></td>
+                  </tr>
+                  <tr>
+                    <td width="50%">Dealer_Id</td>
+                    <td width="50%">deal()</td>
+                  </tr>
+                  <tr>
+                    <td width="50%">Dealer_name</td>
+                    <td width="50%"></td>
+                  </tr>
+                  <tr>
+                    <td width="50%">Dealer_Status</td>
+                    <td width="50%"></td>
+                  </tr>
+
+                  </tbody>
+                </table>
+                <br/>
+                <br/>
+                <table border="1" width="50%">
+                  <tbody>
+                  <tr>
+                    <td width="100%" colspan="2"><b>Class Name: </b>Card</td>
+                  </tr>
+                  <tr>
+                    <td width="100%" colspan="2"><b>Class Type: </b>External Entities</td>
+                  </tr>
+                  <tr>
+                    <td width="100%" colspan="2"><b>Class Characteristics: </b>Tangible, Atomic, Concurrent, Transient,
+                      Corruptible
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="50%"><b>Responsibilities:</b></td>
+                    <td width="50%"><b>Collaborators:</b></td>
+                  </tr>
+                  <tr>
+                    <td width="50%">kind</td>
+                    <td width="50%">view()</td>
+                  </tr>
+                  <tr>
+                    <td width="50%">suit</td>
+                    <td width="50%"></td>
+                  </tr>
+
+                  </tbody>
+                </table>
+
+
+              </div>
+            </div>
+          </div>
+        </section>
 
 
       </section>
@@ -306,6 +430,15 @@
         Collaboration Diagram
       </div>
 
+      <a href="#crc">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="tt9">
+
+          CRC Cards
+        </button>
+      </a>
+      <div class="mdl-tooltip" for="tt9">
+        CRC Cards
+      </div>
 
       <section class="section--center mdl-grid mdl-grid--no-spacing">
         <p class="mdl-cell mdl-cell--12-col">
@@ -546,6 +679,32 @@
           <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
             <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
 
+              <h4>Collaboration Diagram on dealing</h4>
+
+              <img src="images/rummyDealing.png" width="50%" height="50%">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="col2">
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+
+              <h4>Collaboration Diagram on pop card from stock</h4>
+
+              <img src="images/RummyPopCardFromStock.png" width="50%" height="50%">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="col1">
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+
               <h4>Collaboration Diagram on playing</h4>
 
               <img src="images/colloborationRummy.png">
@@ -554,7 +713,277 @@
           </div>
         </div>
       </section>
+      <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="crc">
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
 
+              <h4>CRC Cards</h4>
+
+              <table border="1" width="50%">
+                <tbody>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Name: </b>Player</td>
+                </tr>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Type: </b>External Entities</td>
+                </tr>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Characteristics: </b>Tangible, Atomic, Concurrent, Transient,
+                    Corruptible
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%"><b>Responsibilities:</b></td>
+                  <td width="50%"><b>Collaborators:</b></td>
+                </tr>
+                <tr>
+                  <td width="50%">Player_id</td>
+                  <td width="50%">play()</td>
+                </tr>
+                <tr>
+                  <td width="50%">Player_Name</td>
+                  <td width="50%">getHand()</td>
+                </tr>
+                <tr>
+                  <td width="50%">Player_status</td>
+                  <td width="50%">popCardFromStock()</td>
+                </tr>
+                <tr>
+                  <td width="50%"></td>
+                  <td width="50%">discard()</td>
+                </tr>
+
+                </tbody>
+              </table>
+
+              <br/>
+              <br/>
+
+              <table border="1" width="50%">
+                <tbody>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Name: </b>Dealer</td>
+                </tr>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Type: </b>Roles</td>
+                </tr>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Characteristics: </b>Tangible, Atomic, Concurrent, Transient,
+                    Corruptible
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%"><b>Responsibilities:</b></td>
+                  <td width="50%"><b>Collaborators:</b></td>
+                </tr>
+                <tr>
+                  <td width="50%">Dealer_Id</td>
+                  <td width="50%">deal()</td>
+                </tr>
+                <tr>
+                  <td width="50%">Dealer_name</td>
+                  <td width="50%"></td>
+                </tr>
+                <tr>
+                  <td width="50%">Dealer_Status</td>
+                  <td width="50%"></td>
+                </tr>
+
+                </tbody>
+              </table>
+
+
+              <br/>
+              <br/>
+              <table border="1" width="50%">
+                <tbody>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Name: </b>Hand</td>
+                </tr>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Type: </b>External Entities</td>
+                </tr>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Characteristics: </b>Tangible, Atomic, Concurrent, Transient,
+                    Corruptible
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%"><b>Responsibilities:</b></td>
+                  <td width="50%"><b>Collaborators:</b></td>
+                </tr>
+                <tr>
+                  <td width="50%">List
+                    <card></card>
+                  </td>
+                  <td width="50%">add_card()</td>
+                </tr>
+                <tr>
+                  <td width="50%">Hand_Status</td>
+                  <td width="50%">show()</td>
+                </tr>
+                <tr>
+                  <td width="50%"></td>
+                  <td width="50%">pop()</td>
+                </tr>
+
+                </tbody>
+              </table>
+
+              <br/>
+              <br/>
+
+
+              <table border="1" width="50%">
+                <tbody>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Name: </b>Card</td>
+                </tr>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Type: </b>External Entities</td>
+                </tr>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Characteristics: </b>Tangible, Atomic, Concurrent, Transient,
+                    Corruptible
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%"><b>Responsibilities:</b></td>
+                  <td width="50%"><b>Collaborators:</b></td>
+                </tr>
+                <tr>
+                  <td width="50%">kind</td>
+                  <td width="50%">view()</td>
+                </tr>
+                <tr>
+                  <td width="50%">suit</td>
+                  <td width="50%"></td>
+                </tr>
+
+                </tbody>
+              </table>
+
+
+              <br/>
+              <br/>
+              <table border="1" width="50%">
+                <tbody>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Name: </b>Stock</td>
+                </tr>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Type: </b>External Entities</td>
+                </tr>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Characteristics: </b>Abstract, Atomic, Concurrent, Transient,
+                    Corruptible
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%"><b>Responsibilities:</b></td>
+                  <td width="50%"><b>Collaborators:</b></td>
+                </tr>
+                <tr>
+                  <td width="50%">List
+                    <card></card>
+                  </td>
+                  <td width="50%">view()</td>
+                </tr>
+                <tr>
+                  <td width="50%"></td>
+                  <td width="50%">pop()</td>
+                </tr>
+
+                </tbody>
+              </table>
+
+              <br/>
+              <br/>
+              <table border="1" width="50%">
+                <tbody>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Name: </b>Discard Pile</td>
+                </tr>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Type: </b>External Entities</td>
+                </tr>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Characteristics: </b>Tangible, Atomic, Concurrent, Transient,
+                    Corruptible
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%"><b>Responsibilities:</b></td>
+                  <td width="50%"><b>Collaborators:</b></td>
+                </tr>
+                <tr>
+                  <td width="50%">List
+                    <card></card>
+                  </td>
+                  <td width="50%">view()</td>
+                </tr>
+                <tr>
+                  <td width="50%"></td>
+                  <td width="50%">pop()</td>
+                </tr>
+                <tr>
+                  <td width="50%"></td>
+                  <td width="50%">turn()</td>
+                </tr>
+
+                </tbody>
+              </table>
+              <br/>
+              <br/>
+
+              <table border="1" width="50%">
+                <tbody>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Name: </b>Rule</td>
+                </tr>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Type: </b>External Entities</td>
+                </tr>
+                <tr>
+                  <td width="100%" colspan="2"><b>Class Characteristics: </b>Abstract, Atomic, Concurrent, Transient,
+                    Corruptible
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%"><b>Responsibilities:</b></td>
+                  <td width="50%"><b>Collaborators:</b></td>
+                </tr>
+                <tr>
+                  <td width="50%">Rule Name</td>
+                  <td width="50%">getRule()</td>
+                </tr>
+                <tr>
+                  <td width="50%">List
+                    <conditions></conditions>
+                  </td>
+                  <td width="50%">setRule()</td>
+                </tr>
+                <tr>
+                  <td width="50%"></td>
+                  <td width="50%">getConditions()</td>
+                </tr>
+                <tr>
+                  <td width="50%"></td>
+                  <td width="50%">setConditions()</td>
+                </tr>
+
+                </tbody>
+              </table>
+
+              <br/>
+              <br/>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
 
     </section>
     <section class="mdl-layout__tab-panel" id="aboutUs">
@@ -656,7 +1085,7 @@
       <br/>
       <div>
 
-        <h6>* card images are  taken from <a href="http://estopoker.com"> http://estopoker.com</a></h6>
+        <h6>* card images are taken from <a href="http://estopoker.com"> http://estopoker.com</a></h6>
 
       </div>
     </section>
@@ -670,15 +1099,18 @@
         <ul class="mdl-mega-footer--link-list">
           <li><a href="http://ood-chathurad.rhcloud.com" target="_blank">Hosted Application</a></li>
           <li>
-            <a target="_blank" href="https://github.com/denver-nsbm/OOD" id="gitHub"> <img src="images/GitHub-96.png" width="50pt" height="50pt"></a>
+            <a target="_blank" href="https://github.com/denver-nsbm/OOD" id="gitHub"> <img src="images/GitHub-96.png"
+                                                                                           width="50pt"
+                                                                                           height="50pt"></a>
             <div class="mdl-tooltip" for="gitHub">
               Click here to see Source codes in git hub
             </div>
 
           </li>
           <li>
-            <a target="_blank" href="https://www.openshift.com" id="openshift"><img src="images/openshift.png" width="50pt" height="50pt"></a>
-            <div class="mdl-tooltip" for="openshift" >
+            <a target="_blank" href="https://www.openshift.com" id="openshift"><img src="images/openshift.png"
+                                                                                    width="50pt" height="50pt"></a>
+            <div class="mdl-tooltip" for="openshift">
               Application is hosted in Openshift
             </div>
           </li>
